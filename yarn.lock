@@ -2179,6 +2179,15 @@
   dependencies:
     defer-to-connect "^1.0.1"
 
+"@tanem/svg-injector@^10.1.31":
+  version "10.1.32"
+  resolved "https://registry.npmjs.org/@tanem/svg-injector/-/svg-injector-10.1.32.tgz#e0cc9bb83c683dc578cc77057be0dc22ee116cec"
+  integrity sha512-fu1lx9D1D9I55i8lXH9r8b9malXmkvNH2ZdNI6MTEBVs0DCFJJiy6iz/Scm5Lp2RriSuNjni8h32ojylyKPsJQ==
+  dependencies:
+    "@babel/runtime" "^7.18.9"
+    content-type "^1.0.4"
+    tslib "^2.4.0"
+
 "@testing-library/dom@^8.5.0":
   version "8.17.1"
   resolved "https://registry.npmmirror.com/@testing-library/dom/-/dom-8.17.1.tgz#2d7af4ff6dad8d837630fecd08835aee08320ad7"
@@ -2494,7 +2503,7 @@
   resolved "https://registry.npmmirror.com/@types/prettier/-/prettier-2.7.0.tgz#ea03e9f0376a4446f44797ca19d9c46c36e352dc"
   integrity sha512-RI1L7N4JnW5gQw2spvL7Sllfuf1SaHdrZpCHiBlCXjIlufi1SMNnbu2teze3/QE67Fg2tBlH7W+mi4hVNk4p0A==
 
-"@types/prop-types@*":
+"@types/prop-types@*", "@types/prop-types@^15.7.5":
   version "15.7.5"
   resolved "https://registry.npmmirror.com/@types/prop-types/-/prop-types-15.7.5.tgz#5f19d2b85a98e9558036f6a3cacc8819420f05cf"
   integrity sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==
@@ -3999,6 +4008,11 @@ class-utils@^0.3.5:
     isobject "^3.0.0"
     static-extend "^0.1.1"
 
+classnames@^2.3.1:
+  version "2.3.1"
+  resolved "https://registry.npmjs.org/classnames/-/classnames-2.3.1.tgz#dfcfa3891e306ec1dad105d0e88f4417b8535e8e"
+  integrity sha512-OlQdbZ7gLfGarSqxesMesDa5uz7KFbID8Kpq/SxIoNGDqY8lSYs0D+hhtBXhcdB3rcbXArFr7vlHheLk1voeNA==
+
 clean-css@^5.2.2:
   version "5.3.1"
   resolved "https://registry.npmmirror.com/clean-css/-/clean-css-5.3.1.tgz#d0610b0b90d125196a2894d35366f734e5d7aa32"
@@ -4290,7 +4304,7 @@ content-disposition@0.5.4:
   dependencies:
     safe-buffer "5.2.1"
 
-content-type@~1.0.4:
+content-type@^1.0.4, content-type@~1.0.4:
   version "1.0.4"
   resolved "https://registry.npmmirror.com/content-type/-/content-type-1.0.4.tgz#e138cc75e040c727b1966fe5e5f8c9aee256fe3b"
   integrity sha512-hIP3EEPs8tB9AT1L+NUqtwOAps4mk2Zob89MWXMHjHWg9milF/j4osnnQLXBCBFBk/tvIG/tUc9mOUJiPBhPXA==
@@ -6104,9 +6118,9 @@ fresh@0.5.2:
   resolved "https://registry.npmmirror.com/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha512-zJ2mQYM18rEFOudeV4GShTGIQ7RbzA7ozbU9I/XBpm7kqgMywgmylMwXHxZJmkVoYkna9d2pVXVXPdYTP9ej8Q==
 
-fs-extra@^10.0.0:
+fs-extra@^10.0.0, fs-extra@^10.1.0:
   version "10.1.0"
-  resolved "https://registry.npmmirror.com/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
+  resolved "https://registry.npmjs.org/fs-extra/-/fs-extra-10.1.0.tgz#02873cfbc4084dde127eaa5f9905eef2325d1abf"
   integrity sha512-oRXApq54ETRj4eMiFzGnHWGy+zo5raudjuxN0b8H7s/RU2oW0Wvsx9O0ACRN/kRq9E8Vu/ReskGB5o3ji+FzHQ==
   dependencies:
     graceful-fs "^4.2.0"
@@ -10594,6 +10608,16 @@ react-refresh@^0.11.0:
   resolved "https://registry.npmmirror.com/react-refresh/-/react-refresh-0.11.0.tgz#77198b944733f0f1f1a90e791de4541f9f074046"
   integrity sha512-F27qZr8uUqwhWZboondsPx8tnC3Ct3SxZA3V5WyEvujRyyNv0VYPhoBg1gZ8/MV5tubQp76Trw8lTv9hzRBa+A==
 
+react-svg@^15.1.7:
+  version "15.1.7"
+  resolved "https://registry.npmjs.org/react-svg/-/react-svg-15.1.7.tgz#5800cf5a8e4c00dcad0cf2cb2e1945e3b1e78a06"
+  integrity sha512-xEjh2CU9g1fSjkbIR59YwZCxOINbXq9/L+AdUW1ac4dbHoBxsMGktF1S8DRqVNlFMQIDUENAoXhWiRw6y3RaTA==
+  dependencies:
+    "@babel/runtime" "^7.18.9"
+    "@tanem/svg-injector" "^10.1.31"
+    "@types/prop-types" "^15.7.5"
+    prop-types "^15.8.1"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.npmmirror.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
@@ -12592,7 +12616,7 @@ tslib@^1.8.1, tslib@^1.9.0:
   resolved "https://registry.npmmirror.com/tslib/-/tslib-1.14.1.tgz#cf2d38bdc34a134bcaf1091c41f6619e2f672d00"
   integrity sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==
 
-tslib@^2.0.3, tslib@^2.1.0:
+tslib@^2.0.3, tslib@^2.1.0, tslib@^2.4.0:
   version "2.4.0"
   resolved "https://registry.npmmirror.com/tslib/-/tslib-2.4.0.tgz#7cecaa7f073ce680a05847aa77be941098f36dc3"
   integrity sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==

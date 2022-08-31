@@ -1,0 +1,4 @@
+{
+	"compositeActions": ["book", "role", "goods", "outline"],
+	"sysActions": ["user", "setup"]
+}
